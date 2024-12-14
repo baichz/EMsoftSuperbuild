@@ -98,7 +98,7 @@ Note that the Superbuild has been successfully installed on the arm64 M1 platfor
         mkdir Release
         cd Release
         cmake -G "NMake Makefiles" -DEMsoft_SDK=C:/Users/[USERNAME]/EMsoft_SDK -DCMAKE_BUILD_TYPE=Release ../
-        make -j
+        nmake
 
 7. The initial run of CMake is going to take  **REALLY** long time because it will be downloading the full Qt 5.x installer which is about 3~4 GB in size. On macOS systems it then must verify the .dmg, mount it and run the installer (which verifies the .app). Go get coffee. Compiling (the 'make -j' part) should not take that long, only about 5 minutes or so.
 
